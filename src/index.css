@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: "Rubik", sans-serif;
+}
+@media (min-width: 768px) {
+  .bg-md-none {
+    background-image: none !important;
+  }
+}
+.nav {
+  transition: all 0.5s;
+}
+.shadow-water {
+  box-shadow: rgb(0, 0, 0) 0px -5px 0px 0px inset;
+}
+.shadow-buy {
+  box-shadow: rgb(100, 154, 192) 0px 4px 0px 0px;
+}
+.shadow-nav {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 0px 0px;
+}
+.shadow-feature {
+  box-shadow: rgb(42, 76, 117) -3px 5px 0px 0px,
+    rgb(42, 76, 117) 0px -5px 0px 0px inset;
+}
+.shadow-feature-card-blue {
+  box-shadow: rgb(88, 183, 231) 0px -5px 0px 0px inset;
+}
+.shadow-feature-card-green {
+  box-shadow: rgb(87, 187, 122) 0px -5px 0px 0px inset;
+}
+.shadow-feature-card-beguni {
+  box-shadow: rgb(191, 141, 255) 0px -5px 0px 0px inset;
+}
+.shadow-feature-card-komla {
+  box-shadow: rgb(247, 148, 34) 0px -5px 0px 0px inset;
+}
+
+.slider-text-shadow {
+  text-shadow: rgb(19, 97, 46) 0px 1px 0px;
+}
+.swiper-button-prev {
+  bottom: 0;
+  top: auto !important;
+  left: 35% !important;
+}
+.swiper-button-next {
+  bottom: 0;
+  top: auto !important;
+  right: 35% !important;
+}
+.swiper-button-prev::after {
+  content: url(/left_arrow.png) !important;
+}
+.swiper-button-next::after {
+  content: url(/right_arrow.png) !important;
+}
+.swiper-pagination-bullets {
+  bottom: 35px !important;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 100px !important;
+  height: 100px !important;
+  z-index: 11 !important;
+}
+
+/* Example of @media screen */
+
+/* Adjustments for specific screen sizes */
+@media screen and (max-width: 768px) {
+  .swiper-button-prev {
+    left: 5% !important;
+  }
+  .swiper-button-next {
+    right: 5% !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .swiper-button-prev {
+    left: 20% !important;
+  }
+  .swiper-button-next {
+    right: 20% !important;
+  }
+}
+.breakdown-text-shadow {
+  text-shadow: rgb(55, 94, 139) 3px 5px 0px;
+}
+.base-color {
+  color: #2a4c75;
+}
+.base-color-water {
+  color: #58b7e7;
+}
+.product-shadow {
+  box-shadow: rgb(0, 0, 0) 0px -5px 0px 0px inset;
+}
