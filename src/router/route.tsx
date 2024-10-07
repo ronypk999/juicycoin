@@ -1,7 +1,7 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import Home from "../pages/Home";
 import App from "../App";
-import ContextProvider from "../provider/ContextProvider";
+import ContextProvider, { apiUrl } from "../provider/ContextProvider";
 import Doc from "../Doc";
 import Welcome from "../doc/welcome";
 import NotFound from "../NotFound";
@@ -10,6 +10,9 @@ import Register from "../pages/Register";
 import UserNotLogged from "../UserNotLogged";
 import Dashboard from "../pages/Dashboard";
 import UserLogged from "../UserLogged";
+import axios from "axios";
+
+import { toast } from "react-toastify";
 
 export const route = createBrowserRouter([
   {
@@ -73,6 +76,26 @@ export const route = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
+        loader:  async () => {
+          const response = await axios.post(apiUrl,{
+            // Data to be sent in the POST request
+            type:'account',
+            hash:localStorage.getItem("hash") || null
+          });
+      
+          if(!response.data.fail){
+           return response.data.data;
+            
+           
+          }else{
+            localStorage.removeItem("hash");
+            toast.error(response.data.data)
+            setTimeout(() => {
+              <Navigate to="/login"></Navigate>
+            }, 5000);
+          
+          }
+        }
       },
     ],
   },
