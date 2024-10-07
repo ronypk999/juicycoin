@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { useInfoContext } from '../hook/ContextHook';
 
@@ -28,8 +28,8 @@ const Login: React.FC = () => {
           localStorage.setItem("hash",response.data.data);
           toast.success("Sign In success. Redirecting...");
           setTimeout(() => {
-            navigate('/dashboard');
-          }, 2000);
+           window.location.href="/dashboard";    
+             }, 2000);
         }else{
           toast.error(response.data.data)
         }

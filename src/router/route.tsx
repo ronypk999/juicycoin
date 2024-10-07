@@ -13,6 +13,7 @@ import UserLogged from "../UserLogged";
 import axios from "axios";
 
 import { toast } from "react-toastify";
+import History from "../pages/History";
 
 export const route = createBrowserRouter([
   {
@@ -72,6 +73,7 @@ export const route = createBrowserRouter([
     element: (
     <ContextProvider>  <UserLogged></UserLogged></ContextProvider>
     ),
+    errorElement: <NotFound></NotFound>,
     children: [
       {
         path: "/dashboard",
@@ -95,6 +97,38 @@ export const route = createBrowserRouter([
             }, 5000);
           
           }
+        }
+      }, {
+        path: "/dashboard/history",
+        element: <History></History>,
+        loader:  async () => {
+          const response = await axios.post(apiUrl,{
+            // Data to be sent in the POST request
+            type:'history',
+            hash:localStorage.getItem("hash") || null
+          });
+      
+          if(!response.data.fail){
+            console.log(response.data.data)
+           return response.data.data;
+
+            
+           
+          }else{
+            localStorage.removeItem("hash");
+            toast.error(response.data.data)
+            setTimeout(() => {
+              <Navigate to="/login"></Navigate>
+            }, 5000);
+          
+          }
+        }
+      },{
+        path: "/dashboard/logout",
+        
+        loader: ()=>{
+          localStorage.removeItem("hash");
+          return <Navigate to="/login"></Navigate>
         }
       },
     ],

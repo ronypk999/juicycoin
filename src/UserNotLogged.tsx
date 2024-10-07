@@ -9,7 +9,7 @@ const UserNotLogged: React.FC = () => {
     
     setTimeout(() => {
       nav('/dashboard');
-    }, 100);
+    }, 1000);
   }
   return (
     <>

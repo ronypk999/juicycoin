@@ -28,8 +28,8 @@ const data = useLoaderData() as LoaderData;
   const amount = useRef<HTMLInputElement>(null);
   const address = useRef<HTMLDivElement>(null);
   const close = useRef<HTMLButtonElement>(null);
-  const [user,setUser] = useState(data[0]);
-  const [presaleEndTime,setPresaleEndTime] = useState(data.presaleEndTime);
+  const [user] = useState(data[0]);
+  const [presaleEndTime] = useState(data.presaleEndTime);
 const [copyText,setCopyText] = useState("Copy");
 const nav = useNavigate();
   const copy = (e: React.MouseEvent<HTMLDivElement>)=>{

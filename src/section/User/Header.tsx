@@ -85,23 +85,63 @@ const Header: React.FC = () => {
               </div>
             </div>
             <div className="hidden lg:flex flex-col lg:flex-row items-start gap-6 w-full justify-center">
-              <button className="uppercase" onClick={scrollToFeature}>
-                Features
-              </button>
+            <Link  to="/" className="uppercase" onClick={scrollToFeature}>
+              Home
+              </Link>
+           {localStorage.getItem("hash") ? <>
+            <Link  to="/dashboard" className="uppercase" onClick={scrollToFeature}>
+              Dashboard
+              </Link>
+              <Link  to="/dashboard/history" className="uppercase" onClick={scrollToFeature}>
+              Transaction History
+              </Link>
+              <Link  to="/dashboard/logout" className="uppercase" onClick={scrollToFeature}>
+              Logout
+              </Link></>:<></>}
               
              
             </div>
             <div className="lg:hidden flex flex-col lg:flex-row items-start text-2xl gap-6 uppercase">
-              <button
-                className="uppercase"
-                onClick={() => {
-                  menuHandle();
-                  scrollToFeature();
-                }}
-              >
-                Features
-              </button>
-             
+             <Link
+            to="/"
+              className="uppercase"
+              onClick={() => {
+                menuHandle();
+              }}
+            >
+             Home
+            </Link>
+            {localStorage.getItem("hash") ? 
+            <> 
+          <Link
+            to="/dashboard"
+              className="uppercase"
+              onClick={() => {
+                menuHandle();
+              }}
+            >
+             Dashboard
+            </Link>
+
+            <Link
+            to="/dashboard/history"
+              className="uppercase"
+              onClick={() => {
+                menuHandle();
+              }}
+            >
+              Transaction History
+            </Link>
+            <Link
+            to="/dashboard/logout"
+              className="uppercase"
+              onClick={() => {
+                menuHandle();
+              }}
+            >
+             Logout
+            </Link></>:<></>}
+          
             </div>
 
             <div className="flex flex-col lg:flex-row gap-3 px-6">

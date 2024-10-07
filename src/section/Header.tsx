@@ -144,7 +144,8 @@ const Header: React.FC = () => {
 
             <div className="flex flex-col lg:flex-row gap-3 px-6">
               {/* <img src={logo} className="w-40 mx-auto" /> */}
-              <Link
+              {!localStorage.getItem("hash") ? <>
+                <Link
                 to="/login"
                 className="hidden bg-[#f96d6d] lg:block btn text-base px-6  border-2 border-black rounded-lg text-white py-2 uppercase"
               >
@@ -177,6 +178,40 @@ const Header: React.FC = () => {
               >
                 Sign Up
               </Link>
+              </>:<> <Link
+                to="/dashboard"
+                className="hidden bg-[#f96d6d] lg:block btn text-base px-6  border-2 border-black rounded-lg text-white py-2 uppercase"
+              >
+               Dashboard
+              </Link>
+              <Link
+               to="/dashboard/logout"
+                className="hidden bg-[#f96d6d] lg:block btn text-base px-6  border-2 border-black rounded-lg text-white py-2 uppercase"
+              >
+               Logout
+              </Link>
+              
+              <Link
+                onClick={() => {
+                  menuHandle();
+                }}
+                 to="/dashboard"
+                className="lg:hidden bg-green-600 btn text-base px-12 border-2 border-black rounded-lg text-xl text-white py-2 uppercase"
+              >
+               Dashboard
+              </Link>
+
+              <Link
+                onClick={() => {
+                  menuHandle();
+                
+                }}
+                to="/dashboard/logout"
+                className="lg:hidden bg-green-600 btn text-base px-12 border-2 border-black rounded-lg text-xl text-white py-2 uppercase"
+              >
+                Logout
+              </Link></>}
+             
             </div>
           </div>
         </div>
