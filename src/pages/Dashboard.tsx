@@ -54,6 +54,7 @@ const nav = useNavigate();
     if(amount.current){
       if(parseFloat(amount.current.value) < 10 || !parseFloat(amount.current.value)){
 toast.error("minimum USDT 10");
+(e.target as HTMLButtonElement).innerText ="Submit";
       }else{
         const response = await axios.post(apiUrl, {
           // Data to be sent in the POST request

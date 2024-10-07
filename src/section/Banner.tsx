@@ -51,7 +51,7 @@ const Banner: React.FC = () => {
           />
         </div>
       </div>
-      <div ref={buyRef} className="pt-6 pb-12 px-3 md:px-6">
+      {/* <div ref={buyRef} className="pt-6 pb-12 px-3 md:px-6">
         <div
           className="flex flex-col md:flex-row items-center justify-center gap-6 bg-[#F9C06B] p-3 rounded-box md:rounded-[40px]"
           onClick={copyToClipboard}
@@ -72,7 +72,8 @@ const Banner: React.FC = () => {
             {copySuccess}
           </button>
         </div>
-      </div>
+      </div> */}
+      <div className="py-6"></div>
     </>
   );
 };
