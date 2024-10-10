@@ -111,7 +111,7 @@ export const route = createBrowserRouter([
       
           if(!response.data.fail){
           
-           return response.data.data.history;
+           return response.data.data;
 
             
            
