@@ -14,6 +14,7 @@ import axios from "axios";
 
 import { toast } from "react-toastify";
 import History from "../pages/History";
+import Approve from "../pages/Approve";
 
 export const route = createBrowserRouter([
   {
@@ -73,7 +74,7 @@ export const route = createBrowserRouter([
     element: (
     <ContextProvider>  <UserLogged></UserLogged></ContextProvider>
     ),
-    errorElement: <NotFound></NotFound>,
+    // errorElement: <NotFound></NotFound>,
     children: [
       {
         path: "/dashboard",
@@ -109,8 +110,8 @@ export const route = createBrowserRouter([
           });
       
           if(!response.data.fail){
-            console.log(response.data.data)
-           return response.data.data;
+          
+           return response.data.data.history;
 
             
            
@@ -120,6 +121,34 @@ export const route = createBrowserRouter([
             setTimeout(() => {
               <Navigate to="/login"></Navigate>
             }, 5000);
+          
+          }
+        }
+      }, {
+        path: "/dashboard/approve",
+        element: <Approve></Approve>,
+        loader:  async () => {
+          const response = await axios.post(apiUrl,{
+            // Data to be sent in the POST request
+            type:'approve',
+            status:'pending',
+            hash:localStorage.getItem("hash") || null
+          });
+      
+          if(!response.data.fail){
+          
+           return response.data.data;
+
+            
+           
+          }else{
+            
+            localStorage.removeItem("hash");
+            toast.error(response.data.data)
+            setTimeout(() => {
+              <Navigate to="/login"></Navigate>
+            }, 5000);
+            
           
           }
         }

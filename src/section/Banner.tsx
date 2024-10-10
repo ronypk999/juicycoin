@@ -1,31 +1,31 @@
-import React, { useState } from "react";
+import React from "react";
 
 import desk from "../assets/banner/bg-desk.png";
 import title from "../assets/banner/main_title.png";
 import glass from "../assets/banner/juice_glass.png";
-import { useInfoContext } from "../hook/ContextHook";
+// import { useInfoContext } from "../hook/ContextHook";
 
 const Banner: React.FC = () => {
-  const { buyRef } = useInfoContext();
-  const [copySuccess, setCopySuccess] = useState<string>("Copy");
-  const [copyText] = useState<string>(
-    "B6h248NJkAcBAkaCnji889a26tCiGXGN8cxhEJ4dX391d"
-  );
+  // const { buyRef } = useInfoContext();
+  // const [copySuccess, setCopySuccess] = useState<string>("Copy");
+  // const [copyText] = useState<string>(
+    // "B6h248NJkAcBAkaCnji889a26tCiGXGN8cxhEJ4dX391d"
+  // );
 
-  const copyToClipboard = () => {
-    navigator.clipboard
-      .writeText(copyText)
-      .then(() => {
-        setCopySuccess("Copied!");
-        setTimeout(() => {
-          setCopySuccess("Copy");
-        }, 5000);
-      })
-      .catch((err) => {
-        setCopySuccess("Error!");
-        console.error("Failed to copy: ", err);
-      });
-  };
+  // const copyToClipboard = () => {
+  //   navigator.clipboard
+  //     .writeText(copyText)
+  //     .then(() => {
+  //       setCopySuccess("Copied!");
+  //       setTimeout(() => {
+  //         setCopySuccess("Copy");
+  //       }, 5000);
+  //     })
+  //     .catch((err) => {
+  //       setCopySuccess("Error!");
+  //       console.error("Failed to copy: ", err);
+  //     });
+  // };
 
   return (
     <>

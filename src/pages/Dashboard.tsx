@@ -1,5 +1,5 @@
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import MyTimer from '../hook/MyTimer';
 import usdt from "../assets/usdt.png"
 import { toast } from 'react-toastify';
@@ -109,7 +109,11 @@ toast.error("minimum USDT 10");
       </div>
      <div className='py-3'>
      {/* Open the modal using document.getElementById('ID').showModal() method */}
-<button className="btn btn-primary" onClick={()=>document.getElementById('my_modal_5').showModal()}>Buy Now</button>
+<button className="btn btn-primary" onClick={()=>{const modal = document.getElementById('my_modal_5') as HTMLDialogElement;  if (modal) {
+            modal.showModal();
+        } else {
+            console.error('Modal not found');
+        }}}>Buy Now</button>
 <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle px-3">
   <div className="modal-box">
     <h3 className="font-bold text-lg">Make Payment!</h3>

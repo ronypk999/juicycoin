@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { useInfoContext } from '../hook/ContextHook';
 
@@ -9,7 +9,6 @@ const Login: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [password, setPassword] = useState('');
   const {apiUrl} = useInfoContext();
-  const navigate =  useNavigate() ;
 
     // Add login logic here
  

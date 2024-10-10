@@ -13,12 +13,7 @@ import { Link } from "react-router-dom";
 const Header: React.FC = () => {
   const {
     scrollToFeature,
-    scrollToHealth,
     scrollToTop,
-    scrollToWhitepaper,
-    scrollToBuy,
-    roadMapRef,
-    scrollTo,
   } = useInfoContext();
   const [hide, setHide] = useState(true);
   const [hide2, setHide2] = useState(true);

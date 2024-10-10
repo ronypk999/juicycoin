@@ -16,7 +16,6 @@ const Header: React.FC = () => {
     scrollToHealth,
     scrollToTop,
     scrollToWhitepaper,
-    scrollToBuy,
     roadMapRef,
     scrollTo,
   } = useInfoContext();

@@ -1,5 +1,5 @@
 import React, { createContext, ReactNode, useRef } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+
 
 export interface ContextValue {
   featureRef: React.MutableRefObject<HTMLDivElement | null>;
@@ -29,7 +29,7 @@ export interface ContextValue {
 interface ContextProps {
   children: ReactNode;
 }
-export const apiUrl = "https://anoxpay.com/presale/api.php";
+export const apiUrl = "https://juice-token.com/api.php";
 
 export const InfoContext = createContext<ContextValue | undefined>(undefined);
 
@@ -44,7 +44,7 @@ const ContextProvider: React.FC<ContextProps> = ({ children }) => {
   const section5Ref = useRef<HTMLDivElement>(null);
   const buyRef = useRef<HTMLDivElement>(null);
   const roadMapRef = useRef<HTMLDivElement>(null);
-  const apiUrl = "https://anoxpay.com/presale/api.php";
+  const apiUrl = "https://juice-token.com/api.php";
 
 
   const scrollTo = (ref: React.RefObject<HTMLDivElement>) => {
