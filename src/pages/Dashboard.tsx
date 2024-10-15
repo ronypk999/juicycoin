@@ -20,6 +20,8 @@ interface User {
 interface LoaderData {
   0: User;
   presaleEndTime: number;
+  currentPrice: number;
+  listingPrice: number;
 }
 const Dashboard: React.FC = () => {
 const data = useLoaderData() as LoaderData;
@@ -95,17 +97,17 @@ toast.error("minimum USDT 10");
     <div className='space-y-6'>
     <div className='bg-blue-400 text-white p-6 shadow-lg'>
       <span>Total Balance </span> <br />
-      <span className='text-xl'>{user?.balance ??  0} JUICE</span>
+      <span className='text-xl'>{user?.balance ??  0} JMT</span>
     </div>
     <div className='flex flex-col md:flex-row shadow-lg'>
     <div className='bg-blue-400 text-white p-6'>
       <span>First Stage </span> <br />
-      <span className='text-xl'>Listing Price 0.001 USDT</span>
+      <span className='text-xl'>Listing Price  {data?.listingPrice} USDT</span>
     </div>
     <div className='p-6 flex-1 flex flex-col md:flex-row md:justify-between'>
       <div>
-        <span>SEED </span> <br />
-      <span className='text-xl'>1 $juice = 0.001 USDT</span>
+        <span>Current Price </span> <br />
+      <span className='text-xl'>1 JMT = {data?.currentPrice} USDT</span>
       </div>
      <div className='py-3'>
      {/* Open the modal using document.getElementById('ID').showModal() method */}

@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/more/together_juice.png";
+// import img from "../assets/more/together_juice.png";
 import { useInfoContext } from "../hook/ContextHook";
 
 const More: React.FC = () => {
@@ -12,22 +12,15 @@ const More: React.FC = () => {
             ref={healthRef}
             className="text-xl max-w-lg mx-auto base-color sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase text-center"
           >
-            A Lifelong Health Journey with{" "}
-            <span className="text-orange-400">$JUICE</span>
+            Why   <span className="text-orange-400">Juice Meme Token?</span>
           </h1>
           <p className="base-color text-center max-w-4xl mx-auto text-xl py-6">
-            Health is essential at every stage of life. We have created
-            innovative and healthy tokenomics for $JUICE by harnessing the power
-            of the meme community. Through this, we focus on funding global
-            nutrition research institutions and health promotion charities. Our
-            goal is to collectively drive change to create a healthier
-            investment environment by leveraging the benefits of Vitamin C.
-            $JUICE is beyond a simple meme token, it's the world's first
-            healthcare meme coin project contributing to improving the
-            well-being of coin investors worldwide.
+          Juice Meme Token (JMT) is a project that brings the energy of meme culture into the crypto world. Our goal is to enable
+ users to create fun content while increasing their engagement in the process. With JMT, you can express your creativity and benefit from 
+exclusive perks. Join us, create, and become a part of the JMT community!
           </p>
         </div>
-        <div>
+        {/* <div>
           <img src={img} className="mx-auto" />
           <div className="flex flex-col md:flex-row gap-6 py-12 px-3 md:px-6">
             <div className="flex-1 space-y-6 text-center">
@@ -76,7 +69,7 @@ const More: React.FC = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

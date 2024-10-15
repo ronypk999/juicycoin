@@ -16,8 +16,7 @@ const Header: React.FC = () => {
     scrollToHealth,
     scrollToTop,
     scrollToWhitepaper,
-    roadMapRef,
-    scrollTo,
+    // roadMapRef,
   } = useInfoContext();
   const [hide, setHide] = useState(true);
   const [hide2, setHide2] = useState(true);
@@ -88,16 +87,16 @@ const Header: React.FC = () => {
                 Features
               </button>
               <button className="uppercase" onClick={scrollToHealth}>
-                Healthcare Foundation
+                About
               </button>
-              <button
+              {/* <button
                 className="uppercase"
                 onClick={() => {
                   scrollTo(roadMapRef);
                 }}
               >
                 Roadmap
-              </button>
+              </button> */}
               <button className="uppercase" onClick={scrollToWhitepaper}>
                 WhitePaper
               </button>
@@ -119,9 +118,9 @@ const Header: React.FC = () => {
                   scrollToHealth();
                 }}
               >
-                Healthcare Foundation
+               About
               </button>
-              <button
+              {/* <button
                 className="uppercase"
                 onClick={() => {
                   menuHandle();
@@ -129,7 +128,7 @@ const Header: React.FC = () => {
                 }}
               >
                 Roadmap
-              </button>
+              </button> */}
               <button
                 className="uppercase"
                 onClick={() => {

@@ -45,18 +45,16 @@ const Feature: React.FC = () => {
             <img src={orange} className="w-12 md:w-20" />
             <div className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase text-center">
               <h1 ref={featureRef} className="text-[#2A4C75]">
-                Key Features:
+              Welcome to
               </h1>
-              <h1 className="text-orange-400">$Juice coin</h1>
+              <h1 className="text-orange-400">Juice Meme Token!</h1>
             </div>
             <img src={orange} className="w-12 md:w-20" />
           </div>
           <p className="text-[#2A4C75] max-w-lg text-center mx-auto">
-            $JUICE project injects fresh vitality into investments. Like the
-            refreshing taste of orange juice, we provide new energy to your
-            portfolio. Like the regenerative effects of orange peel oil, our
-            innovative approach revitalizes stagnant investments. With the juice
-            project, your investment will experience vitamin-rich healthy growth
+          Step into the colorful world of meme culture with Juice Meme Token (JMT)! Express your creativity with our 
+community, participate in exciting contests, and enjoy a fun experience. JMT is ready to change the way you interact in the digital world—every 
+meme matters!
           </p>
         </div>
         {/* <div className="flex flex-col md:flex-row justify-between items-center gap-12 lg:-mt-24">
@@ -120,13 +118,11 @@ const Feature: React.FC = () => {
           </figure>
           <div className="card-body p-6">
             <h2 className="card-title text-orange-400 uppercase font-bold">
-              Healthcare Foundation
+            Community Focus
             </h2>
             <p>
-              The core goal of $JUICE is to promote investors' health and
-              welfare through healthcare in the crypto market. We collaborate
-              with leading healthcare foundations to support healthy investment
-              habits and balanced lifestyles for millions of investors.
+            JMT encourages active participation from users. With meme contests and interactive events, it unleashes the creative 
+            potential of the community.
             </p>
           </div>
         </div>
@@ -136,12 +132,11 @@ const Feature: React.FC = () => {
           </figure>
           <div className="card-body p-6">
             <h2 className="card-title text-blue-400 uppercase font-bold">
-              Flexible Token Mechanism
+            Fun and Educational
             </h2>
             <p>
-              To respond to market volatility and reduce investor stress, we
-              introduce a flexible token supply mechanism in the initial stages.
-              This is like how Vitamin C maintains the body's homeostasis.
+            JMT promotes the creation of entertaining content while educating users 
+            about the world of cryptocurrency, providing opportunities for both fun and learning.
             </p>
           </div>
         </div>
@@ -152,12 +147,11 @@ const Feature: React.FC = () => {
           </figure>
           <div className="card-body p-6">
             <h2 className="card-title text-purple-400 uppercase font-bold">
-              Healthy Investment Limit
+            Secure and Transparent
             </h2>
             <p>
-              To prevent financial and mental stress from excessive speculation,
-              we set a maximum investment limit of 100 Solana (SOL) per wallet.
-              This encourages balanced portfolio composition.
+            Operating on the Solana blockchain, JMT offers a secure and transparent platform. Smart
+            contracts ensure that user transactions are protected.
             </p>
           </div>
         </div>
@@ -167,13 +161,10 @@ const Feature: React.FC = () => {
           </figure>
           <div className="card-body p-6">
             <h2 className="card-title text-orange-400 uppercase font-bold">
-              Premium Exchange Partnerships
+            Rewards and Incentives
             </h2>
             <p>
-              We have pre-arranged listing plans with major exchanges, ensuring
-              high liquidity and accessibility of $JUICE. This provides
-              investors with a smooth trading environment, reducing unnecessary
-              stress.
+            Users have the chance to earn rewards for participating in events and creating content, fostering a more active community.
             </p>
           </div>
         </div>
@@ -184,12 +175,11 @@ const Feature: React.FC = () => {
           </figure>
           <div className="card-body p-6">
             <h2 className="card-title text-blue-400 uppercase font-bold">
-              Vesting for Long-term Value Creation
+            Innovative Partnerships
             </h2>
             <p>
-              Tokens of key partners and influencers are kept locked according
-              to publicly verifiable vesting plans. This ensures the project's
-              long-term soundness and sustainable value creation.
+            JMT actively seeks collaborations with meme artists, influencers, and other projects, enhancing visibility and 
+            expanding the ecosystem.
             </p>
           </div>
         </div>
@@ -199,13 +189,11 @@ const Feature: React.FC = () => {
           </figure>
           <div className="card-body p-6">
             <h2 className="card-title text-purple-400 uppercase font-bold">
-              With Vitamin Crypto
+            User-Friendly Interface
             </h2>
             <p>
-              Boost your investment health with the immunity of Vitamin C.
-              Provide resistance to market fluctuations through antioxidant
-              action. Build resistance to market shocks with the immunity of
-              Vitamin C.
+            The platform is designed for ease of use, allowing both beginners and 
+            experienced users to navigate and participate effortlessly in the community.
             </p>
           </div>
         </div>

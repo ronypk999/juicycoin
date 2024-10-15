@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import image1 from "../assets/slider/care_1.png";
 import image2 from "../assets/slider/care_2.png";
 import image3 from "../assets/slider/care_3.png";
-import image4 from "../assets/slider/care_4.png";
+// import image4 from "../assets/slider/care_4.png";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -36,11 +36,6 @@ const Slider: React.FC = () => {
                 slidesPerView: 2,
                 spaceBetween: 20,
               },
-
-              1080: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-              },
             }}
           >
             <SwiperSlide>
@@ -50,16 +45,14 @@ const Slider: React.FC = () => {
                 </figure>
                 <div className="p-6 bg-base-200 h-[275px] space-y-6 overflow-hidden">
                   <h2 className="text-xl md:text-3xl text-[#2a4c75] uppercase font-bold">
-                    <span> Lifetime Health </span>
+                    <span> Relaxation </span>
                     <span className="slider-text-shadow text-orange-400">
-                      Screening Pass
+                     Benefits
                     </span>
                   </h2>
                   <p>
-                    Provides annual comprehensive health screening services.
-                    Through our healthcare partner network, holders can receive
-                    professional health management services and personalized
-                    health advice based on screening results.
+                  As a JMT token holder, enjoy exclusive access to relaxation experiences, including discounts on massage services and 
+wellness retreats. Unwind and rejuvenate with the perks that come with your tokens!
                   </p>
                 </div>
               </div>
@@ -70,15 +63,14 @@ const Slider: React.FC = () => {
               </figure>
               <div className="p-6 bg-base-200 h-[275px] space-y-6 overflow-hidden">
                 <h2 className="text-xl md:text-3xl text-[#2a4c75] uppercase font-bold">
-                  <span>Premium </span>
+                  <span>Exclusive  </span>
                   <span className="slider-text-shadow text-orange-400">
-                    Massage Chair
+                  Content
                   </span>
                 </h2>
                 <p>
-                  Provides a high-end massage chair with cutting-edge
-                  technology. This massage chair helps relieve stress and relax
-                  muscles, contributing to the overall well-being of holders.
+                Gain access to special meme creation workshops and tutorials, designed to enhance your skills and creativity in the meme space.
+
                 </p>
               </div>
             </SwiperSlide>
@@ -88,19 +80,17 @@ const Slider: React.FC = () => {
               </figure>
               <div className="p-6 bg-base-200 h-[275px] space-y-6 overflow-hidden">
                 <h2 className="text-xl md:text-3xl text-[#2a4c75] uppercase font-bold">
-                  <span> Del Monte Lifetime </span>
+                  <span> Priority  </span>
                   <span className="slider-text-shadow text-orange-400">
-                    Free Voucher
+                  Participation
                   </span>
                 </h2>
                 <p>
-                  Provides a voucher for lifetime free use of Del Monte
-                  products. Through this, holders can enjoy high-quality orange
-                  juice for free for life.
+                Token holders receive priority entry to community events and contests, ensuring you’re always at the forefront of the fun!
                 </p>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <figure className="pb-3">
                 <img src={image4} alt="Shoes" className="rounded-xl" />
               </figure>
@@ -119,7 +109,7 @@ const Slider: React.FC = () => {
                   promotion of holders.
                 </p>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
       </div>

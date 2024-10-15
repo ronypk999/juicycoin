@@ -37,7 +37,7 @@ const Welcome: React.FC = () => {
                     }}
                     className="hover:bg-base-200 p-3 rounded-sm"
                   >
-                    1. Introduction to $JUICE
+                    1. Introduction
                   </li>
                   <li
                     onClick={scrollToSection2}
@@ -47,7 +47,7 @@ const Welcome: React.FC = () => {
                     }}
                     className="hover:bg-base-200 p-3 rounded-sm"
                   >
-                    2. $JUICE Sale Details
+                    2. Token Information
                   </li>
                   <li
                     onClick={scrollToSection3}
@@ -57,7 +57,7 @@ const Welcome: React.FC = () => {
                     }}
                     className="hover:bg-base-200 p-3 rounded-sm"
                   >
-                    3. Benefits of $JUICE
+                    3. Technology
                   </li>
                   <li
                     onClick={scrollToSection4}
@@ -67,7 +67,7 @@ const Welcome: React.FC = () => {
                     }}
                     className="hover:bg-base-200 p-3 rounded-sm"
                   >
-                    4. $JUICE Roadmap
+                    4. Ecosystem & 5. Roadmap
                   </li>
                   <li
                     onClick={scrollToSection5}
@@ -77,7 +77,7 @@ const Welcome: React.FC = () => {
                     }}
                     className="hover:bg-base-200 p-3 rounded-sm"
                   >
-                    5. Concluding $JUICE
+                    6. Conclusion
                   </li>
                 </ul>
               </>
@@ -88,32 +88,27 @@ const Welcome: React.FC = () => {
           <div className="space-y-6">
             <div className="space-y-3">
               <h2 ref={section1Ref} className="font-bold text-3xl">
-                1 Introduction to $JUICE: Squeezing the Orange
+                1 Introduction
               </h2>
               <h3 className="font-bold text-xl">
-                1.1 Vision: Charging Up with Vitamins, Energizing with
-                Investment
+                1.1 Project Overview
               </h3>
               <p>
-                The $JUICE project injects fresh vitality into investments. Like
-                the refreshing taste of orange juice, we bring new life to your
-                portfolio. Similar to the rejuvenating effects of orange peel
-                oil, our innovative approach revitalizes stagnant investments.
+              Juice Meme Token (JMT) is an entertainment-focused meme token designed to 
+provide its community with a fun and interactive experience. By leveraging the power of meme culture in the crypto space, we aim to 
+create a platform where users can engage and express their creativity.
               </p>
             </div>
             <div className="space-y-3">
               <h3 className="font-bold text-xl">
-                1.2 Vitamin C(rypto) $JUICE: A New Nutrient in Cryptocurrency
+                1.2 Vision and Mission:
               </h3>
               <p>
-                Boost your investment health with the immunity of Vitamin C
-                Counter market volatility through antioxidant action Protect
-                investments from volatility with orange peel Provide profit
-                realization opportunities through regular 'orange harvests'
-                Offer abundant liquidity like 100% concentrated juice
+              To celebrate meme culture and encourage community participation.
+              Mission: To create a user-friendly, fun, and interactive ecosystem that positions JMT as the world’s most popular meme token.
               </p>
             </div>
-            <div className="space-y-3">
+            {/* <div className="space-y-3">
               <h3 className="font-bold text-xl">
                 1.3 Core Project Values: Healthy Investment, Healthy Life
               </h3>
@@ -122,22 +117,34 @@ const Welcome: React.FC = () => {
                 wellbeing of coin investors worldwide as the world's first
                 healthcare meme coin project.
               </p>
-            </div>
+            </div> */}
           </div>
           <div className="space-y-6">
             <div className="space-y-3">
               <h2 ref={section2Ref} className="font-bold text-3xl">
-                2 $JUICE Sale Details: Freshly Squeezed Tokenomics
+                2 Token Information
               </h2>
               <h3 className="font-bold text-xl">
-                2.1 Total Supply: 88,888,888,888 $JUICE
+                2.1 Token Features
               </h3>
               <p className="pl-6">
-                <li> 30% Presale + Bonus</li>
-                <li> 35% Liquidity/CEX/MM</li>
-                <li>20% Marketing</li>
-                <li> 10% Healthcare Foundation</li>
-                <li> 5% Initial Contributors</li>
+                <li> Name: Juice Meme Token</li>
+                <li> Symbol: JMT</li>
+                <li>Total Supply: 1,000,0000 JMT</li>
+                <li> Standard: SOL </li>
+              </p>
+            </div>
+            <div className="space-y-3">
+              
+              <h3 className="font-bold text-xl">
+                2.2 Distribution
+              </h3>
+              <p className="pl-6">
+                <li>Community: 50%</li>
+                <li>Development Team: 20%</li>
+                <li>Marketing and Partnerships: 15%</li>
+                <li>Reserve: 10%</li>
+                <li>Rewards and Incentives: 5%</li>
               </p>
             </div>
             {/* <div className="space-y-3">
@@ -183,32 +190,26 @@ const Welcome: React.FC = () => {
           <div className="space-y-6">
             <div className="space-y-3">
               <h2 ref={section3Ref} className="font-bold text-3xl">
-                3 Benefits of $JUICE: A Revolution in a Glass of Juice
+                3 Technology
               </h2>
               <h3 className="font-bold text-xl">
-                3.1 Sweet Harmony of Healthcare and Cryptocurrency
+                3.1 Smart Contracts
               </h3>
               <p>
-                The core goal of $JUICE is to promote the health and welfare of
-                investors through healthcare in the crypto market. We
-                collaborate with leading healthcare foundations to support
-                healthy investment habits and balanced lives for millions of
-                investors.
+              JMT operates as an SOL token on the SOLANA blockchain, ensuring a secure 
+              and transparent structure. Smart contracts automate token transfers and community interactions.
               </p>
             </div>
             <div className="space-y-3">
               <h3 className="font-bold text-xl">
-                3.2 Water-Soluble Antioxidant Mechanism: $JUICE's Innovative
-                Token Economy
+                3.2 Security
               </h3>
               <p>
-                $JUICE introduces a unique token mechanism inspired by the
-                water-soluble antioxidant principle of Vitamin C. This is
-                implemented through staking (preventing oxidation) and token
-                burning (removing free radicals).
+              To ensure project security, smart contracts will undergo independent audits. Additionally,
+              there will be quick responses to any security vulnerabilities reported by the community.
               </p>
             </div>
-            <div className="space-y-3">
+            {/* <div className="space-y-3">
               <h3 className="font-bold text-xl">
                 3.3 $JUICE Health Tracker NFT Series: Track Your Health, Reap
                 Rewards
@@ -240,34 +241,29 @@ const Welcome: React.FC = () => {
                 Introduce a flexible token supply mechanism to respond to market
                 volatility and reduce investor stress.
               </p>
-            </div>
+            </div> */}
           </div>
           <div className="space-y-6">
             <div className="space-y-3">
               <h2 ref={section4Ref} className="font-bold text-3xl">
-                4 $JUICE Roadmap: Orange Tree Growth Stages
+                4 Ecosystem
               </h2>
               <h3 className="font-bold text-xl">
-                4.1 Orange Seed Stage: Power of the Sprout
+                4.1 Community Engagement
               </h3>
               <p>
-                $JUICE token launch and initial community formation Establish
-                partnerships with healthcare foundations Launch 'Vitamin
-                C(rypto)' branding campaign
+              Users can participate in meme creation contests, polls, and events using JMT, making them a vital part of the community.
               </p>
             </div>
             <div className="space-y-3">
               <h3 className="font-bold text-xl">
-                4.2 Growth Stage: Nutrient Supply
+                4.2 Collaborations
               </h3>
               <p>
-                DEX exchange listing and initial liquidity provision Launch
-                $JUICE Health Tracker NFT series Introduce 'Water-Soluble
-                Antioxidant Mechanism' staking system Start global nutrition
-                research support program
+              We aim to increase JMT's visibility through partnerships with meme artists, influencers, and other projects.
               </p>
             </div>
-            <div className="space-y-3">
+            {/* <div className="space-y-3">
               <h3 className="font-bold text-xl">
                 4.3 Harvest Stage: Fresh Juice
               </h3>
@@ -286,80 +282,73 @@ const Welcome: React.FC = () => {
                 Healthcare Meme Coin Summit Introduce AI-based personalized
                 health management system
               </p>
-            </div>
+            </div> */}
           </div>
           <div className="space-y-6">
             <div className="space-y-3">
-              <h2 ref={section5Ref} className="font-bold text-3xl">
-                5 Conclusion: Get Rich with Vitamins, Energize with Health
+              <h2 className="font-bold text-3xl">
+                5 Roadmap
               </h2>
               <div>
                 <h3 className="font-bold text-xl">
-                  5.1.1 Sustainable Health Innovation
+                  5.1 2024 Q1
                 </h3>
                 <h3 className="font-bold">
-                  $JUICE pursues sustainable health innovation beyond a simple
-                  investment tool:
+                Project launch 
+               
                 </h3>
               </div>
               <p>
-                Blockchain-based health data management: Develop a decentralized
-                system for safely storing and managing user health information.
-                AI-based personalized health advice: AI analyzes data collected
-                from $JUICE Health Tracker NFTs to provide personalized health
-                advice. Decentralized health insurance system: Build a
-                transparent and efficient health insurance system using
-                blockchain technology.
+              Social media and community building
               </p>
             </div>
             <div className="space-y-3">
               <div>
                 <h3 className="font-bold text-xl">
-                  5.1.2 Global Nutrition Research Support
+                  5.2 2024 Q2
                 </h3>
                 <h3 className="font-bold">
-                  $JUICE actively supports global nutrition research to
-                  contribute to improving human health:
+                First meme contest
                 </h3>
               </div>
               <p>
-                Establish nutrition research fund: Allocate 2% of total supply
-                to global nutrition research fund. Nutrition deficiency solution
-                projects: Support projects to address nutrition deficiency in
-                developing countries.
+              Initial partnership agreements
               </p>
             </div>
             <div className="space-y-3">
               <div>
                 <h3 className="font-bold text-xl">
-                  5.1.3 Health Tech Marketing Strategy
+                  5.3 2024 Q3
                 </h3>
                 <h3 className="font-bold">
-                  $JUICE spreads project value and expands user base through
-                  innovative health tech marketing strategies:
+                  Listing on exchange platforms
                 </h3>
               </div>
               <p>
-                Influencer partnerships: Partner with famous influencers in
-                health and wellness. Virtual Reality (VR) health experience:
-                Develop VR health experience programs for $JUICE holders. Host
-                global health tech conference: Organize annual $JUICE Global
-                Health Tech Conference. New attempt: Launch a health management
-                mobile game utilizing $JUICE tokens.
+              Community events
               </p>
             </div>
             <div className="space-y-3">
-              <h3 className="font-bold text-xl">5.2 Conclusion</h3>
+              <h3 className="font-bold text-xl">5.2 2024 Q4</h3>
+              <h3 className="font-bold">
+              Addition of new features
+                </h3>
               <p>
-                With $JUICE, your investment will experience healthy growth full
-                of vitamins. We present a new paradigm of cryptocurrency
-                investment, realizing harmonious development of finance and
-                health.
+              Expansion of the ecosystem
+              </p>
+            </div>
+            <div className="space-y-3">
+              <h3 ref={section5Ref}  className="font-bold text-xl">6 Conclusion</h3>
+             
+              <p>
+              Juice Meme Token aims to create a fun experience in the cryptocurrency world 
+by establishing a community-driven ecosystem. We look forward to collaborating with our community for the growth and development of JMT 
+by harnessing the power of meme culture.
               </p>
             </div>
             <div className="space-y-3">
               <h3 className="font-bold text-xl">
-                5.3 Contact and Social Media Channels
+                Contact and Social Media Channels
               </h3>
               <p className="pl-6">
                 <ul className="list-style-none">
@@ -367,10 +356,10 @@ const Welcome: React.FC = () => {
                     Website:{" "}
                     <a
                       className="text-blue-500"
-                      href="https://juicememe.wtf"
+                      href="https://juice-token.com"
                       target="_black"
                     >
-                      https://juicememe.wtf
+                      https://juice-token.com
                     </a>
                   </li>
                   {/* <li>Email:</li> */}
@@ -378,20 +367,20 @@ const Welcome: React.FC = () => {
                     Twitter(X):{" "}
                     <a
                       className="text-blue-500"
-                      href="https://x.com/juicecoinnft"
+                      href="https://x.com/juicememetoken"
                       target="_black"
                     >
-                      https://x.com/juicecoinnft
+                      https://x.com/juicememetoken
                     </a>{" "}
                   </li>
                   <li>
                     Telegram:{" "}
                     <a
                       className="text-blue-500"
-                      href="https://t.me/juicecoinnft"
+                      href="https://t.me/juicememetoken"
                       target="_black"
                     >
-                      https://t.me/juicecoinnft
+                      https://t.me/juicememetoken
                     </a>
                   </li>
                 </ul>

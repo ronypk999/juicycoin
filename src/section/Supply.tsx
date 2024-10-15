@@ -1,38 +1,35 @@
 import React from "react";
 
-import ice from "../assets/supply/org_oxidation.png";
-import iceBurned from "../assets/supply/org_freeradical.png";
+// import ice from "../assets/supply/org_oxidation.png";
+// import iceBurned from "../assets/supply/org_freeradical.png";
 
-import { GrStakeholder } from "react-icons/gr";
-import { LiaChartAreaSolid } from "react-icons/lia";
-import {
-  GiCash,
-  GiHealthCapsule,
-  GiHealthNormal,
-  GiTeamIdea,
-} from "react-icons/gi";
-import { SiBuildkite, SiLiquibase, SiProteus } from "react-icons/si";
-import { FaAdjust, FaBurn, FaRecycle } from "react-icons/fa";
+// import { GrStakeholder } from "react-icons/gr";
+// import { LiaChartAreaSolid } from "react-icons/lia";
+// import {
+//   GiCash,
+//   GiHealthCapsule,
+//   GiHealthNormal,
+//   GiTeamIdea,
+// } from "react-icons/gi";
+// import { SiBuildkite, SiLiquibase, SiProteus } from "react-icons/si";
+// import { FaAdjust, FaBurn, FaRecycle } from "react-icons/fa";
 const Supply: React.FC = () => {
   return (
     <>
       <div className="pt-48 md:pt-32">
         <div className="px-3">
           <h1 className="text-xl base-color sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase text-center">
-            Water-soluble Antioxidant Mechanism: <br />
-            <span className="text-orange-400">
-              $JUICE's Innovative Token Economy
+          About <span className="text-orange-400"> Juice Meme Token
             </span>
           </h1>
           <p className="base-color text-center max-w-xl mx-auto text-xl py-6">
-            $JUICE introduces a unique token mechanism inspired by the
-            water-soluble antioxidant principle of Vitamin C. Just as Vitamin C
-            prevents oxidation and removes free radicals in a water-soluble
-            environment, $JUICE tokens stably maintain value and effectively
-            regulate excess supply amid market volatility.
+          Juice Meme Token (JMT) is an innovative meme token that promotes fun content creation and offers a community-driven 
+ecosystem. Users can showcase their creative talents through meme contests, interactive events, and access to exclusive content. Operating
+ securely on the Solana blockchain, JMT celebrates the value of every meme by providing unique experiences to its community. Join us on this 
+exciting journey with JMT!
           </p>
         </div>
-        <div className="flex flex-col md:flex-row gap-6 justify-center px-3 md:px-6">
+        {/* <div className="flex flex-col md:flex-row gap-6 justify-center px-3 md:px-6">
           <div className="flex-1 space-y-3 py-8 px-6 border-2 border-[#58b7e7] rounded-box">
             <img src={ice} className="mx-auto py-6" />
             <h1 className="text-xl base-color sm:text-2xl md:text-3xl lg:text-4xl font-black uppercase text-center">
@@ -213,7 +210,7 @@ const Supply: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

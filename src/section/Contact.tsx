@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
             to="/whitepaper"
             className="btn product-shadow py-3 px-6 mx-auto w-fit bg-transparent uppercase border-4 border-black"
           >
-            $JUICE WHITEPAPER
+            WHITEPAPER
           </Link>
         </div>
         <div
@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
             <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
               <div>
                 <a
-                  href="https://x.com/juicecoinnft"
+                  href="https://x.com/juicememetoken"
                   target="_black"
                   className="rounded-full text-white hover:scale-95 hover:bg-[#4672eb] shadow-water border-2 border-black hover:border-2 hover:border-black btn bg-[#4672eb] btn-md px-6"
                 >
@@ -56,7 +56,7 @@ const Contact: React.FC = () => {
               </div>
               <div>
                 <a
-                  href="https://t.me/juicecoinnft"
+                  href="https://t.me/juicememetoken"
                   target="_black"
                   className="rounded-full text-white hover:scale-95 hover:bg-[#4672eb] shadow-water border-2 border-black hover:border-2 hover:border-black btn bg-[#4672eb] btn-md px-6"
                 >

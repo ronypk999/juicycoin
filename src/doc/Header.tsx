@@ -37,11 +37,12 @@ const Header: React.FC = () => {
           <div className="flex items-center gap-3 sm:mx-3">
             <img src={image} alt="logo" className="w-12" />
             <h1 className="text-xl sm:text-3xl font-black flex flex-col sm:flex-row items-center gap-0 sm:gap-3">
-              <span className=""> The whitepaper</span>
+           
               <div className="flex items-center gap-3">
-                <span> of </span>
+
                 <span className="text-orange-400">$Juice</span>
               </div>
+              <span className=""> Meme Token (JMT) White Paper</span>
             </h1>
           </div>
         </div>
@@ -61,7 +62,7 @@ const Header: React.FC = () => {
                     }}
                     className="hover:bg-base-200 p-3 rounded-sm"
                   >
-                    1. Introduction to $JUICE
+                    1. Introduction
                   </li>
                   <li
                     onClick={scrollToSection2}
@@ -71,7 +72,7 @@ const Header: React.FC = () => {
                     }}
                     className="hover:bg-base-200 p-3 rounded-sm"
                   >
-                    2. $JUICE Sale Details
+                    2.Token Information
                   </li>
                   <li
                     onClick={scrollToSection3}
@@ -81,7 +82,7 @@ const Header: React.FC = () => {
                     }}
                     className="hover:bg-base-200 p-3 rounded-sm"
                   >
-                    3. Benefits of $JUICE
+                    3. Technology
                   </li>
                   <li
                     onClick={scrollToSection4}
@@ -91,7 +92,7 @@ const Header: React.FC = () => {
                     }}
                     className="hover:bg-base-200 p-3 rounded-sm"
                   >
-                    4. $JUICE Roadmap
+                      4. Ecosystem & 5. Roadmap
                   </li>
                   <li
                     onClick={scrollToSection5}
@@ -101,7 +102,7 @@ const Header: React.FC = () => {
                     }}
                     className="hover:bg-base-200 p-3 rounded-sm"
                   >
-                    5. Concluding $JUICE
+                    6. Conclusion
                   </li>
                 </ul>
               </>
