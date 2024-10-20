@@ -125,7 +125,7 @@ toast.error("minimum USDT 10");
       <div className='flex flex-col sm:flex-row gap-3'>
       <img src={usdt} alt="usdt" className='w-6' />
       <div className='flex gap-2' onClick={copy}>
-      <span className='break-all' ref={address}>TMNqB5Puf97VfequLTbegJhWFPLdmZpTNB</span>
+      <span className='break-all' ref={address}>TUNU5pDCotSvY9FdzJ2fHV67CbThXH1fmf</span>
       <button className='btn btn-primary btn-xs'>{copyText}</button>
       </div>
       </div>
